@@ -11,8 +11,10 @@ Then iterates through each category page and scraps the links to all the article
 The article_classifier.py imports the .csv file, does some preprocessing (lowering, stopword remowal, those are let down in the currennt version of the code).
 Replaces missing elements with empty strings.
 Then divides the data into training, validating, and testing parts (using the sklearn ibrary). Next it vectorizes the data with TF-IDF vectorizer.
-Initialize the hyperparameters and defiing the classifier. Here the SGDClassifier is used. 
-Then perform a grid ssearch for the best hyperparameter and train the classifier on it.
+Initializes the hyperparameters and defines the classifier.
+
+Here the SGDClassifier is used. 
+Then we perform a grid search for the best hyperparameter and train the classifier on it.
 
 And at last, we calculate the accuracy of the classifier with the precision/recall/f1-scores
 
