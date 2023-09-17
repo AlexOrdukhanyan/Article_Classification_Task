@@ -25,7 +25,7 @@ Some of the best scores that I recieved:
 ![Screenshot 2023-09-17 194051](https://github.com/AlexOrdukhanyan/Article_Classification_Task/assets/114373618/9d9f8573-759d-411c-9373-0352b73e71b9)
 
 
-Useful Materials And Sources:
+Some Useful Materials And Sources:
 
 https://towardsdatascience.com/scraping-1000s-of-news-articles-using-10-simple-steps-d57636a49755
 
