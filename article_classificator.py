@@ -11,7 +11,7 @@ data = pd.read_csv('corpus_articles.csv', encoding='utf-8')
 
 # a little preprocess
 
-"""
+
 armenian_stopwords = [
     'այդ', 'այլ', 'այն', 'այս', 'դու', 'դուք', 'եմ', 'են', 'ենք', 'ես',
     'եք', 'է', 'էի', 'էին', 'էիր', 'էիք', 'էր', 'ըստ', 'թ', 'ի', 'ին', 'իսկ',
@@ -20,6 +20,8 @@ armenian_stopwords = [
     'վրա', 'և'
 ]
 
+data['Article Text'].fillna('', inplace=True)
+
 def preprocess_text(text):
     text = text.lower()
     words = text.split()
@@ -27,9 +29,6 @@ def preprocess_text(text):
     return ' '.join(filtered_words)
 
 data['Article Text'] = data['Article Text'].apply(preprocess_text)
-"""
-
-data['Article Text'].fillna('', inplace=True)
 
 # splitting the data into training, validation, and testing parts
 X_train, X_temp, y_train, y_temp = train_test_split(data['Article Text'], data['Category'], test_size=0.3, random_state=42)
