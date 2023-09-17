@@ -8,7 +8,7 @@ The scraper.py program uses BeautifulSoup library for pulling data out of HTML f
 First, using CSS tags it scraps the links of different news category pages.
 Then iterates through each category page and scraps the links to all the articles. Then with a delay of 2 second for each category, it scraps articles storing its text. Finally it converts the obtained text into a .csv file ( <article_text, category> ).
 
-The article_classifier.py imports the .csv file, does some preprocessing (lowering, stopword remowal, those are let down in the currennt version of the code).
+The article_classifier.py imports the .csv file, does some preprocessing (lowering, stopword remowal).
 Replaces missing elements with empty strings.
 Then divides the data into training, validating, and testing parts (using the sklearn ibrary). Next it vectorizes the data with TF-IDF vectorizer.
 Initializes the hyperparameters and defines the classifier.
