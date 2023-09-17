@@ -6,7 +6,7 @@ The news source is chosen as https://lurer.com
 
 The scraper.py program uses BeautifulSoup library for pulling data out of HTML files.
 First, using CSS tags it scraps the links of different news category pages.
-Then iterates through each category page and scraps the links to all the articles. Then with a delay of 2 second for each category, it scraps each article storing its text. Finally it converts the obtained text into a .csv file ( <article_text, category> ).
+Then iterates through each category page and scraps the links to all the articles. Then with a delay of 2 second for each category, it scraps articles storing its text. Finally it converts the obtained text into a .csv file ( <article_text, category> ).
 
 The article_classifier.py imports the .csv file, does some preprocessing (lowering, stopword remowal, those are let down in the currennt version of the code).
 Replaces missing elements with empty strings.
